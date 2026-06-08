@@ -930,6 +930,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f43efdb55f854f40a9799a3454609fd, type: 3}
+--- !u!1001 &861070426221534358
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5592395736514078851, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592395736514078851, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592395736514078851, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592395736514078851, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.51146924
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592395736514078851, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.82240903
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592395736514078851, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.13154468
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592395736514078851, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.21151519
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592395736514078851, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 116.244
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592395736514078851, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -28.846985
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592395736514078851, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058790882398575488, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
+      propertyPath: m_Name
+      value: "Batman (oui, il est vraiment d\xE9taill\xE9)"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d68eda5385fbef44ca40cf60bfd9e73f, type: 3}
 --- !u!1001 &4153032881104666416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1193,3 +1250,4 @@ SceneRoots:
   - {fileID: 1962488742}
   - {fileID: 8085463529921328793}
   - {fileID: 311056075597646298}
+  - {fileID: 861070426221534358}
