@@ -256,6 +256,203 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &369653620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 369653622}
+  - component: {fileID: 369653621}
+  m_Layer: 0
+  m_Name: Path Walk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &369653621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369653620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: 0
+        y: 0
+        z: 0
+      TangentIn:
+        x: -1.1773273
+        y: 0
+        z: -2.8136873
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0.4097668
+      Rotation:
+        value:
+          x: 0
+          y: 0.55929655
+          z: 0
+          w: 0.82896775
+    - Position:
+        x: 0.0018686056
+        y: 0
+        z: 3.0238214
+      TangentIn:
+        x: -0
+        y: -0
+        z: -0.7109338
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0.70184743
+      Rotation:
+        value:
+          x: 0
+          y: -0.38056937
+          z: -0
+          w: 0.9247524
+    - Position:
+        x: -2.945045
+        y: 0
+        z: 3.0489614
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1.5465828
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1.5465828
+      Rotation:
+        value:
+          x: 0
+          y: 0.89552116
+          z: 0
+          w: -0.4450188
+    - Position:
+        x: 0
+        y: 0
+        z: 0
+      TangentIn:
+        x: 0
+        y: 0
+        z: -3.050072
+      TangentOut:
+        x: 0
+        y: 0
+        z: 3.050072
+      Rotation:
+        value:
+          x: 0
+          y: 0.71153665
+          z: 0
+          w: 0.702649
+    - Position:
+        x: 4.0103545
+        y: 0
+        z: -2.013174
+      TangentIn:
+        x: 0
+        y: 0
+        z: -0.7572662
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0.7572662
+      Rotation:
+        value:
+          x: 0
+          y: 0.99531204
+          z: 0
+          w: -0.09671627
+    - Position:
+        x: 1.3956561
+        y: 0
+        z: -3.5511956
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1.934629
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1.934629
+      Rotation:
+        value:
+          x: 0
+          y: -0.51804256
+          z: -0
+          w: 0.8553548
+    m_MetaData:
+    - Mode: 4
+      Tension: 0.5
+    - Mode: 0
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    m_Closed: 1
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink:
+    - Knots:
+      - Spline: 0
+        Knot: 0
+      - Spline: 0
+        Knot: 3
+--- !u!4 &369653622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369653620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0130957365, y: 0, z: -0.033482075}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,7 +633,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6cef2f4e3c1f35b48be6e6cb95e38c94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.0130957365
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6cef2f4e3c1f35b48be6e6cb95e38c94, type: 3}
       propertyPath: m_LocalPosition.y
@@ -444,11 +641,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6cef2f4e3c1f35b48be6e6cb95e38c94, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.033482075
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6cef2f4e3c1f35b48be6e6cb95e38c94, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.8289677
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6cef2f4e3c1f35b48be6e6cb95e38c94, type: 3}
       propertyPath: m_LocalRotation.x
@@ -456,7 +653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6cef2f4e3c1f35b48be6e6cb95e38c94, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.5592966
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6cef2f4e3c1f35b48be6e6cb95e38c94, type: 3}
       propertyPath: m_LocalRotation.z
@@ -527,10 +724,10 @@ PrefabInstance:
       addedObject: {fileID: 1454548015}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6cef2f4e3c1f35b48be6e6cb95e38c94, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1454548018}
+      addedObject: {fileID: 1454548019}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6cef2f4e3c1f35b48be6e6cb95e38c94, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1454548019}
+      addedObject: {fileID: 1454548021}
   m_SourcePrefab: {fileID: 100100000, guid: 6cef2f4e3c1f35b48be6e6cb95e38c94, type: 3}
 --- !u!1 &1454548012 stripped
 GameObject:
@@ -574,46 +771,6 @@ MonoBehaviour:
     animatorTrigger: T_pointing
     delayBeforeNext: 2
   playOnStart: 1
---- !u!114 &1454548018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1454548012}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Spline:
-    m_EditModeType: 1
-    m_Knots: []
-    m_MetaData: []
-    m_Closed: 0
-    m_IntData:
-      m_Data: []
-    m_FloatData:
-      m_Data: []
-    m_Float4Data:
-      m_Data: []
-    m_ObjectData:
-      m_Data: []
-  m_Splines:
-  - m_EditModeType: 1
-    m_Knots: []
-    m_MetaData: []
-    m_Closed: 0
-    m_IntData:
-      m_Data: []
-    m_FloatData:
-      m_Data: []
-    m_Float4Data:
-      m_Data: []
-    m_ObjectData:
-      m_Data: []
-  m_Knots:
-    m_KnotsLink: []
 --- !u!114 &1454548019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,7 +797,36 @@ MonoBehaviour:
     triggerAnimator: T_pointing
   - nomDescription: Walk
     toucheClavier: 119
-    triggerAnimator: T_pointing
+    triggerAnimator: T_Walking
+  - nomDescription: Idle
+    toucheClavier: 105
+    triggerAnimator: T_Idle
+  - nomDescription: Fear
+    toucheClavier: 102
+    triggerAnimator: T_Fear
+--- !u!114 &1454548021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454548012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a074d529cf945029ef7cf40540c9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 369653621}
+  m_PlayOnAwake: 0
+  m_LoopMode: 1
+  m_Method: 0
+  m_Duration: 7
+  m_MaxSpeed: 3.7500682
+  m_EasingMode: 0
+  m_AlignmentMode: 1
+  m_ObjectForwardAxis: 2
+  m_ObjectUpAxis: 1
+  m_StartOffset: 0
 --- !u!1 &1663752990
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,3 +998,4 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1663752992}
   - {fileID: 1273619229}
+  - {fileID: 369653622}
