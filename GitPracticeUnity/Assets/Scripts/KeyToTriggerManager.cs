@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+// Ajout du namespace pour les Splines de Unity
+using UnityEngine.Splines;
 
 public class KeyToTriggerManager : MonoBehaviour
 {
@@ -10,28 +12,26 @@ public class KeyToTriggerManager : MonoBehaviour
         public string nomDescription;
         public KeyCode toucheClavier;
         public string triggerAnimator;
+
+        // Nouvelle variable : le composant Spline Animate à déclencher pour cette touche
+        [Tooltip("Le composant Spline Animate qui doit se lancer avec cette touche (Optionnel)")]
+        public SplineAnimate splineA_Declencher;
     }
 
     [Header("Configuration")]
-    [Tooltip("Glisse ici ton Animator Controller depuis le panneau Project.")]
-    // C'est cette variable qui te permet le Drag & Drop depuis le panneau Project
     public RuntimeAnimatorController animatorController;
-
-    [Tooltip("L'objet de la scène qui doit être animé (optionnel si ce script est déjà sur l'objet).")]
     public Animator animatorCible;
 
-    [Header("Liaisons Touches -> Triggers")]
+    [Header("Liaisons Touches -> Triggers & Splines")]
     public List<KeyTriggerMapping> listeLiaisons = new List<KeyTriggerMapping>();
 
     void Awake()
     {
-        // Si tu n'as pas assigné d'animator cible, on cherche celui du GameObject actuel
         if (animatorCible == null)
         {
             animatorCible = GetComponent<Animator>();
         }
 
-        // Sécurité : on s'assure que l'animator de la scène utilise bien le bon controller au démarrage
         if (animatorCible != null && animatorController != null)
         {
             animatorCible.runtimeAnimatorController = animatorController;
@@ -40,15 +40,22 @@ public class KeyToTriggerManager : MonoBehaviour
 
     void Update()
     {
-        if (animatorCible == null || animatorController == null) return;
-
         foreach (var liaison in listeLiaisons)
         {
             if (Input.GetKeyDown(liaison.toucheClavier))
             {
-                if (!string.IsNullOrEmpty(liaison.triggerAnimator))
+                // 1. Déclenchement de l'animation (Animator)
+                if (animatorCible != null && !string.IsNullOrEmpty(liaison.triggerAnimator))
                 {
                     animatorCible.SetTrigger(liaison.triggerAnimator);
+                }
+
+                // 2. Déclenchement du mouvement sur la Spline
+                if (liaison.splineA_Declencher != null)
+                {
+                    // Restart(true) remet l'objet au début de la spline et lance le Play.
+                    // Si tu veux juste faire "Play" là où l'objet en était, utilise : liaison.splineA_Declencher.Play();
+                    liaison.splineA_Declencher.Restart(true);
                 }
             }
         }

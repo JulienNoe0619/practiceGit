@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Elena@Smiling
+  m_Name: Elena@Fear
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -32,7 +32,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 80
+        value: 100
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -42,7 +42,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: blendShape.Expression_Smile
+    attribute: blendShape.Brows_Sad
     path: SM_Elena
     classID: 137
     script: {fileID: 0}
@@ -62,7 +62,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 30
+        value: 70
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -73,36 +73,6 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: blendShape.Mouth_Open
-    path: SM_Elena
-    classID: 137
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.5
-        value: 50
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: blendShape.Brows_Up
     path: SM_Elena
     classID: 137
     script: {fileID: 0}
@@ -147,7 +117,7 @@ AnimationClip:
     genericBindings:
     - serializedVersion: 2
       path: 146474105
-      attribute: 1374866957
+      attribute: 3860742674
       script: {fileID: 0}
       typeID: 137
       customType: 20
@@ -157,15 +127,6 @@ AnimationClip:
     - serializedVersion: 2
       path: 146474105
       attribute: 2355226484
-      script: {fileID: 0}
-      typeID: 137
-      customType: 20
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 146474105
-      attribute: 1319036025
       script: {fileID: 0}
       typeID: 137
       customType: 20
@@ -218,7 +179,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 80
+        value: 100
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -228,7 +189,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: blendShape.Expression_Smile
+    attribute: blendShape.Brows_Sad
     path: SM_Elena
     classID: 137
     script: {fileID: 0}
@@ -248,7 +209,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 30
+        value: 70
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -259,36 +220,6 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: blendShape.Mouth_Open
-    path: SM_Elena
-    classID: 137
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.5
-        value: 50
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: blendShape.Brows_Up
     path: SM_Elena
     classID: 137
     script: {fileID: 0}

@@ -20,18 +20,14 @@ public class KeyToTriggerEditor : Editor
         serializedObject.Update();
 
         KeyToTriggerManager manager = (KeyToTriggerManager)target;
-
-        // On va chercher les triggers directement depuis l'asset de ton panneau Project
         string[] triggerNames = GetAnimatorTriggers(manager.animatorController);
-
         SerializedProperty listProp = serializedObject.FindProperty("listeLiaisons");
 
-        // Affichage des champs de configuration
         EditorGUILayout.PropertyField(serializedObject.FindProperty("animatorController"), new GUIContent("Animator Controller (Project)"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("animatorCible"), new GUIContent("Animator Cible (Scène)"));
         EditorGUILayout.Space();
 
-        EditorGUILayout.LabelField("Liaisons Touches -> Triggers", EditorStyles.boldLabel);
+        EditorGUILayout.LabelField("Liaisons Touches -> Triggers & Splines", EditorStyles.boldLabel);
 
         for (int i = 0; i < listProp.arraySize; i++)
         {
@@ -39,12 +35,14 @@ public class KeyToTriggerEditor : Editor
             SerializedProperty nomDesc = element.FindPropertyRelative("nomDescription");
             SerializedProperty touche = element.FindPropertyRelative("toucheClavier");
             SerializedProperty trigger = element.FindPropertyRelative("triggerAnimator");
+            // Récupération de la propriété Spline
+            SerializedProperty splineProp = element.FindPropertyRelative("splineA_Declencher");
 
             EditorGUILayout.BeginVertical(GUI.skin.box);
 
             EditorGUILayout.PropertyField(nomDesc, new GUIContent("Nom Repère"));
 
-            // Dropdown touches (Lettres en premier)
+            // Dropdown Touches
             KeyCode currentKey = (KeyCode)touche.intValue;
             int currentKeyIndex = Array.IndexOf(_orderedKeyCodes, currentKey);
             if (currentKeyIndex == -1) currentKeyIndex = 0;
@@ -52,7 +50,7 @@ public class KeyToTriggerEditor : Editor
             int newKeyIndex = EditorGUILayout.Popup("Touche Clavier", currentKeyIndex, _orderedKeyNames);
             touche.intValue = (int)_orderedKeyCodes[newKeyIndex];
 
-            // Dropdown Triggers liés à l'Asset
+            // Dropdown Triggers
             if (triggerNames.Length > 0)
             {
                 int currentIndex = Mathf.Max(0, Array.IndexOf(triggerNames, trigger.stringValue));
@@ -61,9 +59,12 @@ public class KeyToTriggerEditor : Editor
             }
             else
             {
-                EditorGUILayout.HelpBox("Aucun trigger trouvé. Glisse un Animator Controller valide depuis ton panneau Project.", MessageType.Warning);
+                EditorGUILayout.HelpBox("Aucun trigger trouvé sur l'Animator Controller.", MessageType.Warning);
                 EditorGUILayout.PropertyField(trigger, new GUIContent("Trigger (Nom manuel)"));
             }
+
+            // Nouveau champ pour glisser-déposer le composant Spline Animate
+            EditorGUILayout.PropertyField(splineProp, new GUIContent("Spline Animate (Scène)"));
 
             if (GUILayout.Button("Supprimer cette liaison", EditorStyles.miniButtonRight))
             {
@@ -107,17 +108,13 @@ public class KeyToTriggerEditor : Editor
         _orderedKeyNames = finalSortedList.Select(k => k.ToString()).ToArray();
     }
 
-    // Modification ici pour lire directement l'asset RuntimeAnimatorController
     private string[] GetAnimatorTriggers(RuntimeAnimatorController runtimeController)
     {
         if (runtimeController == null)
             return new string[0];
 
         List<string> triggers = new List<string>();
-
-        // Cast vers le type Editor pour lire les paramètres du fichier d'origine
         var controller = runtimeController as UnityEditor.Animations.AnimatorController;
-
         if (controller != null)
         {
             foreach (var parameter in controller.parameters)
