@@ -248,18 +248,6 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Locomotion Layer
-    m_StateMachine: {fileID: 6630674577570645096}
-    m_Mask: {fileID: 31900000, guid: f3cc6a367ebdc8d45a5fc93a807ca8c7, type: 2}
-    m_Motions: []
-    m_Behaviours: []
-    m_BlendingMode: 1
-    m_SyncedLayerIndex: -1
-    m_DefaultWeight: 1
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 9100000}
-  - serializedVersion: 5
     m_Name: Specific Layer
     m_StateMachine: {fileID: -3719319249929321832}
     m_Mask: {fileID: 31900000, guid: 7f62bfb84e4b00f4e84b4ea7cbb97d9e, type: 2}
@@ -275,6 +263,18 @@ AnimatorController:
     m_Name: BlendShape Layer
     m_StateMachine: {fileID: 7059708294269264095}
     m_Mask: {fileID: 31900000, guid: 108aa37404cf58a4b9007f5d108b7d14, type: 2}
+    m_Motions: []
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_DefaultWeight: 1
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+  - serializedVersion: 5
+    m_Name: Locomotion Layer
+    m_StateMachine: {fileID: 6630674577570645096}
+    m_Mask: {fileID: 31900000, guid: f3cc6a367ebdc8d45a5fc93a807ca8c7, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0

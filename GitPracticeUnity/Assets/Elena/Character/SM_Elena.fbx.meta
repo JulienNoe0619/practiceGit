@@ -91,11 +91,11 @@ ModelImporter:
     - boneName: mixamorig:LeftUpLeg
       humanName: LeftUpperLeg
       limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        min: {x: -60, y: -12.110088, z: -90}
+        max: {x: 60, y: 60.000004, z: 50}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightUpLeg
       humanName: RightUpperLeg
       limit:
@@ -107,11 +107,11 @@ ModelImporter:
     - boneName: mixamorig:LeftLeg
       humanName: LeftLowerLeg
       limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        min: {x: -90, y: 0, z: -66.78899}
+        max: {x: 90, y: 0, z: 80}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightLeg
       humanName: RightLowerLeg
       limit:
@@ -187,11 +187,11 @@ ModelImporter:
     - boneName: mixamorig:LeftArm
       humanName: LeftUpperArm
       limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        min: {x: -70.68292, y: -75, z: -45}
+        max: {x: 90, y: 100.00001, z: 100}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightArm
       humanName: RightUpperArm
       limit:
@@ -203,11 +203,11 @@ ModelImporter:
     - boneName: mixamorig:LeftForeArm
       humanName: LeftLowerArm
       limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        min: {x: -90, y: 0, z: -51.902435}
+        max: {x: 90, y: 0, z: 108.097565}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightForeArm
       humanName: RightLowerArm
       limit:
@@ -236,10 +236,10 @@ ModelImporter:
       humanName: LeftToes
       limit:
         min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 50}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightToeBase
       humanName: RightToes
       limit:
