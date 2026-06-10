@@ -602,7 +602,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581764889}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -610,7 +610,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -883,34 +883,34 @@ MonoBehaviour:
   blendShapes:
   - phoneme: A
     index: 0
-    maxWeight: 0.9
+    maxWeight: 1
   - phoneme: E
     index: 1
-    maxWeight: 0.8
+    maxWeight: 1
   - phoneme: E
     index: 0
-    maxWeight: 0.1
+    maxWeight: 1
   - phoneme: I
     index: 0
-    maxWeight: 0.3
+    maxWeight: 1
   - phoneme: I
     index: 3
-    maxWeight: 0.4
+    maxWeight: 1
   - phoneme: I
     index: 4
-    maxWeight: 0.4
+    maxWeight: 1
   - phoneme: U
     index: 1
-    maxWeight: 0.8
+    maxWeight: 1
   - phoneme: O
     index: 1
-    maxWeight: 0.9
+    maxWeight: 1
   - phoneme: '-'
     index: 2
     maxWeight: 1
   maxBlendShapeValue: 100
-  minVolume: -2.5921054
-  maxVolume: -0.5199008
+  minVolume: -2.5338488
+  maxVolume: -1.5690911
   smoothness: 0.05
   usePhonemeBlend: 0
 --- !u!1001 &1273619229
@@ -1198,16 +1198,16 @@ MonoBehaviour:
     maxWeight: 1
   - phoneme: E
     index: 0
-    maxWeight: 0.6
+    maxWeight: 1
   - phoneme: E
     index: 1
-    maxWeight: 0.6
+    maxWeight: 1
   - phoneme: I
     index: 3
     maxWeight: 1
   - phoneme: I
     index: 0
-    maxWeight: 0.3
+    maxWeight: 1
   - phoneme: U
     index: 1
     maxWeight: 1
@@ -1217,9 +1217,12 @@ MonoBehaviour:
   - phoneme: '-'
     index: 2
     maxWeight: 1
+  - phoneme: A
+    index: 4
+    maxWeight: 0.2
   maxBlendShapeValue: 100
-  minVolume: -4.644737
-  maxVolume: 0
+  minVolume: -2.995595
+  maxVolume: -2.5550663
   smoothness: 0.05
   usePhonemeBlend: 0
 --- !u!1001 &1413698172
@@ -1562,7 +1565,7 @@ GameObject:
   - component: {fileID: 1663752995}
   - component: {fileID: 1663752994}
   m_Layer: 0
-  m_Name: AudioManager
+  m_Name: audio victor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1622,7 +1625,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663752990}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -1630,7 +1633,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
