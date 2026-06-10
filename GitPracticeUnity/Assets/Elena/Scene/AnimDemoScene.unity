@@ -829,6 +829,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6206593448963833159, guid: 34afba9098ece894ca362c61e776ffa4, type: 3}
+      propertyPath: 'm_BlendShapeWeights.Array.data[5]'
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6206593448963833159, guid: 34afba9098ece894ca362c61e776ffa4, type: 3}
       propertyPath: 'm_BlendShapeWeights.Array.data[6]'
       value: 0
       objectReference: {fileID: 0}
@@ -911,7 +915,7 @@ MonoBehaviour:
   maxBlendShapeValue: 100
   minVolume: -2.5338488
   maxVolume: -1.5690911
-  smoothness: 0.05
+  smoothness: 0.1
   usePhonemeBlend: 0
 --- !u!1001 &1273619229
 PrefabInstance:
@@ -1335,6 +1339,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3887185075125053422, guid: 7c11bfdbff859074bbabbc58a7528e5b, type: 3}
       propertyPath: 'm_BlendShapeWeights.Array.data[10]'
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3887185075125053422, guid: 7c11bfdbff859074bbabbc58a7528e5b, type: 3}
+      propertyPath: 'm_BlendShapeWeights.Array.data[11]'
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3887185075125053422, guid: 7c11bfdbff859074bbabbc58a7528e5b, type: 3}
