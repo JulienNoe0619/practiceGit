@@ -1460,7 +1460,7 @@ MonoBehaviour:
   blendShapes: []
   maxBlendShapeValue: 100
   minVolume: -2.5
-  maxVolume: -1.5
+  maxVolume: -1.606383
   smoothness: 0.05
   usePhonemeBlend: 0
 --- !u!4 &1454548022 stripped
@@ -1636,7 +1636,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 8bfab5952c418164c8cee9315a669432, type: 3}
+  m_Resource: {fileID: 8300000, guid: 51ed46b71e8c8bd4c8a0abb6f393c312, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
